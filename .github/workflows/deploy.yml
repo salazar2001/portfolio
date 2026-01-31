@@ -9,16 +9,14 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-  
-  deploy:
-    environment:
-      name: github-pages
-      runs-on: ubuntu-latest
 
     permissions:
       contents: read
       pages: write
       id-token: write
+
+    environment:
+      name: github-pages
 
     steps:
       - name: Checkout code
