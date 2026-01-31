@@ -9,6 +9,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+  
+  deploy:
+    environment:
+      name: github-pages
 
     permissions:
       contents: read
